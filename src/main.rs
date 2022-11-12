@@ -200,7 +200,6 @@ impl DecodedInstruction {
                     opcode_str = format!("assert equal {} = {}", res_str, dst_str);
                 }
                 _ => {
-                    println!("{} dsfds", self.opcode);
                     return Self::UNDEFINED_BEHAVIOR.to_string();
                 }
             }
